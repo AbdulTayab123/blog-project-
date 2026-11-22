@@ -4,9 +4,9 @@ A modern, high-end editorial news publication created in pure **HTML5, CSS3, and
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-### 1. 🎯 Pixel-Perfect Design Matching
+### 1. Pixel-Perfect Design Matching
 - **Deep Luxury Dark Theme**: Dark slate palette (`#0d0e12`, `#14161d`, `#1a1c26`) with subtle borders and cyan/orange/purple glowing accents.
 - **Atmospheric Curved Earth Hero**: Atmospheric arc of planet Earth from space with city night lights, starry sky, and glowing atmospheric gradient.
 - **Hero Carousel**: 3 featured investigative stories with dynamic pill indicators and auto-slide rotation.
@@ -20,27 +20,27 @@ A modern, high-end editorial news publication created in pure **HTML5, CSS3, and
 
 ---
 
-## 🚀 Live API Integrations
+##  Live API Integrations
 
-### 1. 🌦️ Live Global Weather Engine (Open-Meteo API)
+### 1.  Live Global Weather Engine (Open-Meteo API)
 - **100% Free & Keyless**: No API keys required, zero CORS constraints.
 - **Real-Time Global Telemetry**: Live temperature, weather condition codes (Clear/Sunny, Overcast, Rain, Snow, Thunderstorm), precipitation %, wind speed (km/h), and relative humidity %.
 - **Dynamic City Geocoding**: Search any city in the world (e.g., *London, Tokyo, New York, Paris, Dubai, Sydney, Toronto, Berlin*) with instant live weather updates.
 - **One-Click GPS Auto-Detection**: Uses the browser's Geolocation API to fetch live weather at the user's exact coordinates.
 - **Celsius & Fahrenheit Toggle**: Instant switch between `°C` and `°F` with persistent preferences saved to `localStorage`.
 
-### 2. ⚡ Live Technology Wire (Hacker News Firebase API)
+### 2.  Live Technology Wire (Hacker News Firebase API)
 - Real-time connection to `https://hacker-news.firebaseio.com/v0/topstories.json`.
 - Live point scores, comment counts, and humanized relative timestamps (`12m ago`, `1h ago`).
 - Fallback caching ensuring the interface never displays blank boxes or broken feeds.
 
-### 3. ⚽ Live Sports Matchdays & Telemetry
+### 3.  Live Sports Matchdays & Telemetry
 - Interactive scorecards for UEFA Champions League, Premier League, NBA, and Formula 1.
 - Animated live indicators with pulsing red tags.
 
 ---
 
-## 🧭 Multi-Page Navigation Structure
+##  Multi-Page Navigation Structure
 
 Every navigation item is fully functional and routes to its dedicated page:
 - [`index.html`](file:///c:/Users/HP/OneDrive/Desktop/Internship/sample%20blog%20website%20fronted/index.html) - **Home**: Exact replica of the original design layout.
@@ -52,7 +52,7 @@ Every navigation item is fully functional and routes to its dedicated page:
 
 ---
 
-## 💻 How to Open and Run
+##  How to Open and Run
 
 ### Option 1: Direct in Browser
 Simply double-click `index.html` or open it with Google Chrome, Microsoft Edge, or Firefox.
