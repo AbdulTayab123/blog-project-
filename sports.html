@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Pulse & Live Fixtures - ABNews</title>
+  <meta name="description" content="Live scores, tournament fixtures, athletic performance analytics, and global sporting championships.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- SITE HEADER (3-COLUMN GRID LAYOUT) -->
+  <header class="site-header">
+    <div class="container top-bar">
+      <a href="index.html" class="site-logo">
+        <span class="logo-text">AB<span>News</span></span>
+      </a>
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="technology.html">Technology</a></li>
+          <li class="nav-item">
+            <a href="news.html">News <span class="live-pill"><span class="live-dot"></span>Live</span></a>
+          </li>
+          <li class="nav-item"><a href="education.html">Education</a></li>
+          <li class="nav-item active"><a href="sports.html">Sports</a></li>
+        </ul>
+      </nav>
+      <div class="top-socials">
+        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- CATEGORY HERO -->
+    <section class="category-hero">
+      <div class="category-banner">
+        <div class="category-banner-content">
+          <span class="badge badge-emerald category-badge-pill">Championship Wire</span>
+          <h1 class="category-hero-title">Live Matchdays & Sports Analytics</h1>
+          <p class="category-hero-subtitle">Instant match results, World Cup preparations, Grand Prix aerodynamics, and tactical mastery.</p>
+          <div class="category-filters-row">
+            <button class="filter-btn active">All Sports</button>
+            <button class="filter-btn">Football (Soccer)</button>
+            <button class="filter-btn">Formula 1</button>
+            <button class="filter-btn">Basketball</button>
+            <button class="filter-btn">Tennis</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE MATCH SCORECARDS (Football, F1, NBA) -->
+    <section style="margin-top: 30px;">
+      <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+        <span class="live-dot"></span> Live Match Telemetry
+      </h3>
+      <div class="sports-live-ticker">
+        <div class="match-card">
+          <div class="match-header">
+            <span>UEFA Champions League</span>
+            <span class="match-live-tag"><span class="live-dot"></span> 78'</span>
+          </div>
+          <div class="match-team-row"><span>Real Madrid</span><span class="match-score">2</span></div>
+          <div class="match-team-row"><span>Bayern Munich</span><span class="match-score">1</span></div>
+        </div>
+
+        <div class="match-card">
+          <div class="match-header">
+            <span>Premier League</span>
+            <span style="color:var(--text-dim); font-weight:600;">Full Time</span>
+          </div>
+          <div class="match-team-row"><span>Arsenal</span><span class="match-score">2</span></div>
+          <div class="match-team-row"><span>Manchester City</span><span class="match-score">2</span></div>
+        </div>
+
+        <div class="match-card">
+          <div class="match-header">
+            <span>Formula 1</span>
+            <span class="match-live-tag"><span class="live-dot"></span> Q3 LIVE</span>
+          </div>
+          <div class="match-team-row"><span>Verstappen (Red Bull)</span><span class="match-score" style="font-size:0.8rem; color:var(--accent-cyan);">1:11.365</span></div>
+          <div class="match-team-row"><span>Leclerc (Ferrari)</span><span class="match-score" style="font-size:0.8rem; color:var(--text-sub);">+0.082s</span></div>
+        </div>
+
+        <div class="match-card">
+          <div class="match-header">
+            <span>NBA Regular Season</span>
+            <span class="match-live-tag"><span class="live-dot"></span> Q4 01:45</span>
+          </div>
+          <div class="match-team-row"><span>Boston Celtics</span><span class="match-score">112</span></div>
+          <div class="match-team-row"><span>Golden State</span><span class="match-score">108</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- LIVE CRICKET SCORE SECTION -->
+    <!-- ========================================== -->
+    <section style="margin-top: 40px;">
+      <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+        <span class="live-dot"></span> Live Cricket Score
+        <span id="cricket-loading" style="font-size: 0.8rem; font-weight: 400; color: var(--text-dim); margin-left: 8px;">(Fetching live data...)</span>
+      </h3>
+      <div class="sports-live-ticker" id="cricket-score-container">
+        <!-- Live cricket scores will be injected here by JavaScript -->
+      </div>
+    </section>
+
+    <!-- CONTENT & SIDEBAR -->
+    <section class="section-padding">
+      <div class="main-grid-layout">
+        
+        <!-- Primary Articles Feed -->
+        <div class="feed-stream">
+          
+          <!-- Article 1: World Cup -->
+          <article class="feed-card">
+            <div class="feed-card-thumb">
+              <a href="article.html?id=latest-world-cup">
+                <!-- NAYA IMAGE LINK (PEXELS) + FALLBACK (ONERROR) -->
+                <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a1c26/ffffff?text=World+Cup+2026';"
+                     alt="Football pitch under illuminated floodlights">
+              </a>
+            </div>
+            <div class="feed-card-body">
+              <span class="badge badge-orange feed-card-badge">World Cup</span>
+              <h2 class="feed-card-title">
+                <a href="article.html?id=latest-world-cup">Check out the full World Cup schedule</a>
+              </h2>
+              <p class="feed-card-excerpt">
+                Match timings, host stadiums, travel logistics, and ticket release dates for the world's premier football championship.
+              </p>
+              <a href="article.html?id=latest-world-cup" class="read-more-link">
+                Read Full Story
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2: Champions League -->
+          <article class="feed-card">
+            <div class="feed-card-thumb">
+              <a href="article.html?id=sports-champions-league">
+                <!-- NAYA IMAGE LINK (PEXELS) + FALLBACK -->
+                <img src="https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a1c26/ffffff?text=Champions+League';"
+                     alt="Football players in tactical formation">
+              </a>
+            </div>
+            <div class="feed-card-body">
+              <span class="badge badge-emerald feed-card-badge">Football</span>
+              <h2 class="feed-card-title">
+                <a href="article.html?id=sports-champions-league">Champions League Quarter-Final Thrillers Await</a>
+              </h2>
+              <p class="feed-card-excerpt">
+                Tactical masterminds clash as Europe's top football clubs vie for continental glory in high-stakes knockout fixtures.
+              </p>
+              <a href="article.html?id=sports-champions-league" class="read-more-link">
+                Read Full Story
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3: Formula 1 -->
+          <article class="feed-card">
+            <div class="feed-card-thumb">
+              <a href="article.html?id=sports-f1-grand-prix">
+                <!-- NAYA IMAGE LINK (UNSPLASH ALTERNATIVE) + FALLBACK -->
+                <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=600&auto=format&fit=crop" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a1c26/ffffff?text=Formula+1';"
+                     alt="Formula 1 race car turning on track">
+              </a>
+            </div>
+            <div class="feed-card-body">
+              <span class="badge badge-emerald feed-card-badge">Motorsport</span>
+              <h2 class="feed-card-title">
+                <a href="article.html?id=sports-f1-grand-prix">Formula 1: Aerodynamic Upgrades Revealed in Pre-Season</a>
+              </h2>
+              <p class="feed-card-excerpt">
+                Sidepod innovations and ground-effect floor revisions set the tone for an intensely competitive championship campaign.
+              </p>
+              <a href="article.html?id=sports-f1-grand-prix" class="read-more-link">
+                Read Full Story
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar-column">
+          <div class="weather-widget-card">
+            <div class="weather-header">
+              <div class="weather-location-info">
+                <div class="weather-city-country"><span id="weather-city">USA</span></div>
+                <div id="weather-condition" class="weather-condition-text">Matchday Forecast</div>
+              </div>
+              <button id="weather-unit-toggle" class="weather-unit-toggle">°C</button>
+            </div>
+            <div class="weather-main-row">
+              <div class="weather-temp-wrap"><span id="weather-temp" class="weather-temp-num">14°</span></div>
+              <div id="weather-icon" class="weather-icon-wrap">☀️</div>
+            </div>
+            <div class="weather-divider"></div>
+            <div class="weather-stats-grid">
+              <div class="weather-stat-item">
+                <div class="weather-stat-item-inner">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"></path><path d="M16 14v6"></path><path d="M8 14v6"></path><path d="M12 16v6"></path></svg>
+                  <span id="weather-rain">12%</span>
+                </div>
+                <span class="weather-stat-label">Rain</span>
+              </div>
+              <div class="weather-stat-item">
+                <div class="weather-stat-item-inner">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+                  <span id="weather-wind">4.8 KM/H</span>
+                </div>
+                <span class="weather-stat-label">Wind</span>
+              </div>
+              <div class="weather-stat-item">
+                <div class="weather-stat-item-inner">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                  <span id="weather-humidity">67%</span>
+                </div>
+                <span class="weather-stat-label">Humidity</span>
+              </div>
+            </div>
+            <button id="weather-city-change-btn" class="weather-city-change-btn">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Check Stadium Weather
+            </button>
+          </div>
+
+          <div class="sidebar-live-box">
+            <div class="sidebar-box-header"><h3 class="sidebar-box-title">🏆 Premier Rankings</h3></div>
+            <div class="live-feed-list">
+              <div class="live-feed-item"><span style="font-weight:700; color:var(--text-main);">1. Manchester City (68 pts)</span><div class="live-feed-meta"><span>+42 GD • 28 Matches</span></div></div>
+              <div class="live-feed-item"><span style="font-weight:700; color:var(--text-main);">2. Arsenal (67 pts)</span><div class="live-feed-meta"><span>+39 GD • 28 Matches</span></div></div>
+              <div class="live-feed-item"><span style="font-weight:700; color:var(--text-main);">3. Liverpool (64 pts)</span><div class="live-feed-meta"><span>+34 GD • 28 Matches</span></div></div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+      <div class="newsletter-card">
+        <div class="newsletter-left">
+          <h2 class="newsletter-title">Subscribe to Sports Digest</h2>
+          <ul class="newsletter-perks">
+            <li class="newsletter-perk-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>Weekend Fixture Previews & Tactical Analysis</li>
+            <li class="newsletter-perk-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>Exclusive Athlete & Team Principal Interviews</li>
+          </ul>
+        </div>
+        <div class="newsletter-right">
+          <form id="newsletter-form" class="newsletter-form">
+            <div class="newsletter-input-group"><input type="text" id="newsletter-name" class="newsletter-input" placeholder="Your Name" required></div>
+            <div class="newsletter-input-group"><input type="email" id="newsletter-email" class="newsletter-input" placeholder="Your Email Address" required></div>
+            <div class="newsletter-actions"><button type="submit" class="newsletter-submit-btn">Subscribe</button></div>
+            <div id="newsletter-feedback" class="newsletter-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo">ABNews</a>
+          <p class="footer-bio">Independent journalism and verified live signals on global sports, technology, and geopolitics.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="sports.html">Sports</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-col">
+          <h4 class="footer-heading">Follow</h4>
+          <div class="footer-social-row">
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <span>© 2024 ABNews. All Rights Reserved.</span>
+        <span>Independent Editorial • Verified Telemetry</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/tech-api.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- LIVE CRICKET SCORE SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const cricketContainer = document.getElementById('cricket-score-container');
+      const loadingText = document.getElementById('cricket-loading');
+      
+      // CORS proxy use kar rahe hain taake direct browser se API call block na ho
+      const apiUrl = 'https://api.allorigins.win/raw?url=https://sportscore.com/api/widget/cricket';
+
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          loadingText.style.display = 'none'; 
+          
+          let matches = [];
+          if (Array.isArray(data)) {
+            matches = data;
+          } else if (data && data.matches) {
+            matches = data.matches;
+          } else if (data && data.data) {
+            matches = data.data;
+          }
+
+          if (matches.length === 0) {
+            cricketContainer.innerHTML = '<p style="color: var(--text-dim); font-size: 0.9rem;">Abhi koi live cricket match nahi hai.</p>';
+            return;
+          }
+
+          matches.slice(0, 3).forEach(match => { 
+            const card = document.createElement('div');
+            card.className = 'match-card';
+            
+            const league = match.league || match.tournament || 'Cricket Match';
+            const team1 = match.team1 || match.homeTeam || 'Team 1';
+            const team2 = match.team2 || match.awayTeam || 'Team 2';
+            const score1 = match.score1 || match.score?.team1 || '-';
+            const score2 = match.score2 || match.score?.team2 || '-';
+            const status = match.status || 'LIVE';
+            
+            const isLive = status.toLowerCase().includes('live') || status.toLowerCase().includes('in progress');
+            const statusHTML = isLive 
+                ? `<span class="match-live-tag"><span class="live-dot"></span> LIVE</span>` 
+                : `<span style="color:var(--text-dim); font-weight:600;">${status}</span>`;
+
+            card.innerHTML = `
+              <div class="match-header"><span>${league}</span>${statusHTML}</div>
+              <div class="match-team-row"><span>${team1}</span><span class="match-score">${score1}</span></div>
+              <div class="match-team-row"><span>${team2}</span><span class="match-score">${score2}</span></div>
+            `;
+            cricketContainer.appendChild(card);
+          });
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          loadingText.style.display = 'none';
+          // Fallback Data
+          cricketContainer.innerHTML = `
+            <div class="match-card">
+              <div class="match-header"><span>ICC Men's T20 World Cup</span><span class="match-live-tag"><span class="live-dot"></span> LIVE</span></div>
+              <div class="match-team-row"><span>India</span><span class="match-score">172/2 (14.4)</span></div>
+              <div class="match-team-row"><span>West Indies</span><span class="match-score">171 (20)</span></div>
+            </div>
+            <div class="match-card">
+              <div class="match-header"><span>Asian Games 2026</span><span class="match-live-tag"><span class="live-dot"></span> LIVE</span></div>
+              <div class="match-team-row"><span>Sri Lanka</span><span class="match-score">45</span></div>
+              <div class="match-team-row"><span>India</span><span class="match-score">169/7 (20)</span></div>
+            </div>
+          `;
+        });
+    });
+  </script>
+</body>
+</html>

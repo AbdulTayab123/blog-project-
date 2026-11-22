@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Reader - ABNews</title>
+  <meta name="description" content="In-depth editorial reporting and verified dispatches from ABNews.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- SITE HEADER (3-COLUMN GRID LAYOUT) -->
+  <header class="site-header">
+    <div class="container top-bar">
+      
+      <!-- 1. LEFT: Logo -->
+      <a href="index.html" class="site-logo">
+        <span class="logo-text">AB<span>News</span></span>
+      </a>
+
+      <!-- 2. CENTER: Navigation Links -->
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="technology.html">Technology</a></li>
+          <li class="nav-item">
+            <a href="news.html">News <span class="live-pill"><span class="live-dot"></span>Live</span></a>
+          </li>
+          <li class="nav-item"><a href="education.html">Education</a></li>
+          <li class="nav-item"><a href="sports.html">Sports</a></li>
+        </ul>
+      </nav>
+
+      <!-- 3. RIGHT: Social Icons -->
+      <div class="top-socials">
+        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- DYNAMIC ARTICLE CONTAINER -->
+    <article id="dynamic-article-content" class="article-hero">
+      
+      <!-- Article Header -->
+      <header class="article-header">
+        <span id="article-badge" class="badge badge-purple" style="margin-bottom: 16px;">World</span>
+        <h1 id="article-title" class="article-main-title">
+          "Our Precious Planet: Nurturing Earth's Ecosystems for a Sustainable Future"
+        </h1>
+
+        <div class="article-author-bar">
+          <div class="article-author-avatar">
+            <img id="article-author-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" alt="Author avatar">
+          </div>
+          <div>
+            <div id="article-author-name" style="font-weight: 700; color: var(--text-heading);">Dr. Elena Rostova</div>
+            <div id="article-author-role" style="font-size: 0.78rem; color: var(--text-dim);">Climate Science Fellow</div>
+          </div>
+          <span style="color: var(--border-light);">•</span>
+          <span id="article-date">21 Feb 2024</span>
+          <span style="color: var(--border-light);">•</span>
+          <span id="article-read-time">7 Min Read</span>
+        </div>
+      </header>
+
+      <!-- Featured Image -->
+      <div class="article-featured-image">
+        <img id="article-hero-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop" alt="Featured Article Photography">
+      </div>
+
+      <!-- Article Body -->
+      <div id="article-body" class="article-body-container">
+        <!-- Injected via JavaScript from data.js -->
+      </div>
+
+      <!-- Interaction Bar: Likes, Shares, Bookmarks -->
+      <div class="article-body-container">
+        <div class="article-interaction-bar">
+          <div class="interaction-actions-left">
+            <button id="article-like-btn" class="interact-btn" title="Like this article">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+              <span id="article-likes-count">342</span> Likes
+            </button>
+
+            <button id="article-share-btn" class="interact-btn" title="Share article link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+              Share
+            </button>
+          </div>
+
+          <button id="article-bookmark-btn" class="interact-btn" title="Save to bookmarks">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Bookmark
+          </button>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- RELATED STORIES SECTION -->
+    <section class="section-padding" style="padding-top: 10px;">
+      <div class="section-header-row">
+        <h2 class="section-main-title">Related Stories</h2>
+        <a href="index.html" class="see-all-link">
+          Back to Home
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="other-posts-grid">
+        <article class="other-card">
+          <div class="other-card-thumb">
+            <a href="article.html?id=hero-ai-frontier">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop" alt="Frontier Intelligence AI">
+            </a>
+          </div>
+          <h3 class="other-card-title">
+            <a href="article.html?id=hero-ai-frontier">Frontier Intelligence: Next-Gen Neural Architectures</a>
+          </h3>
+          <span class="other-card-meta">Technology • 6 Min Read</span>
+        </article>
+
+        <article class="other-card">
+          <div class="other-card-thumb">
+            <a href="article.html?id=feed-montreal-diplomacy">
+              <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=600&auto=format&fit=crop" alt="Diplomacy summit">
+            </a>
+          </div>
+          <h3 class="other-card-title">
+            <a href="article.html?id=feed-montreal-diplomacy">Montreal's Diplomatic Relations</a>
+          </h3>
+          <span class="other-card-meta">Politics • 5 Min Read</span>
+        </article>
+
+        <article class="other-card">
+          <div class="other-card-thumb">
+            <a href="article.html?id=feat-crafting-success">
+              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&auto=format&fit=crop" alt="Business discussion">
+            </a>
+          </div>
+          <h3 class="other-card-title">
+            <a href="article.html?id=feat-crafting-success">Crafting Success: Business Insights</a>
+          </h3>
+          <span class="other-card-meta">Business • 6 Min Read</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+      <div class="newsletter-card">
+        <div class="newsletter-left">
+          <h2 class="newsletter-title">Enjoyed this dispatch?</h2>
+          <p style="font-size: 0.9rem; color: var(--text-sub);">
+            Receive verified investigative journalism directly in your inbox every morning.
+          </p>
+        </div>
+        <div class="newsletter-right">
+          <form id="newsletter-form" class="newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="text" id="newsletter-name" class="newsletter-input" placeholder="Your Name" required>
+            </div>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Your Email Address" required>
+            </div>
+            <div class="newsletter-actions">
+              <button type="submit" class="newsletter-submit-btn">Subscribe</button>
+            </div>
+            <div id="newsletter-feedback" class="newsletter-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo">ABNews</a>
+          <p class="footer-bio">
+            Independent journalism and verified live signals on global technology, geopolitics, and science.
+          </p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="sports.html">Sports</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-col">
+          <h4 class="footer-heading">Social</h4>
+          <div class="footer-social-row">
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <span>© 2024 ABNews. All Rights Reserved.</span>
+        <span>Independent Editorial • Verified Telemetry</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/tech-api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
